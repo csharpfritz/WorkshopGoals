@@ -9,6 +9,10 @@ We would like to provide a standard for workshops as we prepare for the launch o
 
 Detailed instructions to help get development environments to the expected beginning state should be provided.  Any links to Microsoft properties should be embedded with aka.ms links.  This should be delivered in a SETUP.md file and any custom required assets should be embedded in an optional `/setup` folder.  Example:  emulators and hardware configuration for mobile application workshops
 
+### Finished Application
+
+For workshops that build up a single application or system, the finished product should be made available in a `/src` folder
+
 ### Modules with Samples and Scripts
 
 Workshops are comprised of modules, where each module teaches a single concept.  Each module is made of the following:
@@ -17,7 +21,7 @@ Workshops are comprised of modules, where each module teaches a single concept. 
 - A 'completed state' that demonstrates how the module should be successfully completed
 - A demo-script for instructors or students who wish to learn the workshop on their own.
 
-#### Samples Code for each Module
+#### Sample Code for each Module
 
 Sample code shall be provided so that it's available to run on as many operating systems as possible.  An isolated solution file and projects should be provided for the completed states of the sample code.  A begin state of the sample is only required when the module starts with a state that is not the results of `Setup` or the previous module.
 
@@ -54,11 +58,13 @@ Workshops have this folder structure:
 /modules
 /modules/module-XX
 /modules/module-XX/README.md 
+/modules/module-XX/notes.md 
 /modules/module-XX/begin 
 /modules/module-XX/complete 
 /modules/module-XX/img 
 /setup
 /setup/README.md
+/src
 /tests
 ```
 
