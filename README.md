@@ -29,6 +29,10 @@ Scripts should be provided for each module in markdown format, named README.md, 
 
 All workshops will carry GitHub actions that build and potentially execute unit tests to verify that demos all continue to function.  All samples should be built for every pull-request and commit to the `main` branch to ensure the quality and completeness of the samples provided.
 
+#### Speaker Notes
+
+A `notes.md` file should be provided with an outline of the lesson in each module folder and any notes to be passed along to a speaker presenting the workshop. 
+
 #### Additional documentation
 
 Workshops may have a `/docs` folder that contains Powerpoint slides, images, and additional supporting documentation for the instructor. 
@@ -42,6 +46,7 @@ Workshops have this folder structure:
 /.devcontainer/.devcontainer.json 
 /.github/workflows/workshop.yml 
 /LICENSE
+/speaker-notes.md
 /README.md
 /VIDEO.md
 /docs
