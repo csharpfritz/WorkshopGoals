@@ -13,7 +13,7 @@ Detailed instructions to help get development environments to the expected begin
 
 Workshops are comprised of modules, where each module teaches a single concept.  Each module is made of the following:
 
-- A 'before state' that provides a starting point for students to begin the module
+- An optional 'before state' that provides a starting point for students to begin the module
 - A 'completed state' that demonstrates how the module should be successfully completed
 - A demo-script for instructors or students who wish to learn the workshop on their own.
 
@@ -29,6 +29,10 @@ Scripts should be provided for each module in markdown format, named README.md, 
 
 All workshops will carry GitHub actions that build and potentially execute unit tests to verify that demos all continue to function.  All samples should be built for every pull-request and commit to the `main` branch to ensure the quality and completeness of the samples provided.
 
+#### Additional documentation
+
+Workshops may have a `/docs` folder that contains Powerpoint slides, images, and additional supporting documentation for the instructor. 
+
 ### Standard Folder Structure
 
 Workshops have this folder structure:
@@ -40,6 +44,7 @@ Workshops have this folder structure:
 /LICENSE
 /README.md
 /VIDEO.md
+/docs
 /migration
 /modules
 /modules/module-XX
